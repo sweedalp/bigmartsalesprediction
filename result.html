@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Mart Sales Prediction - Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('static/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .content {
+            text-align: center;
+        }
+        .prediction {
+            background-color: rgba(250, 61, 61, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+        .prediction p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="prediction">
+            <h1>Prediction Result</h1>
+            <p>The predicted sales amount is: {{ prediction }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Mart Sales Prediction</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url("{{ url_for('static', filename='static\a.jpg') }}") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .content {
+        text-align: center;
+        background: peachpuff;
+        padding: 40px;
+        border-radius: 10px;
+        width: 620px;
+
+        height: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 3em;
+        margin-top: 20px;
+        margin-bottom: 18px;
+        color: rgb(12, 12, 120);
+      }
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #1ec93d;
+        color: black;
+
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.4em;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #1ca93a;
+      }
+      .additional-info {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 17px;
+        line-height: 1.5;
+        color: rgb(244, 17, 142);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Big Mart Sales Prediction</h1>
+      <a href="/input" class="btn">See Future Sales</a>
+      <p class="additional-info">
+        Optimize your business strategy by predicting sales trends with
+        accuracy. Gain valuable insights into market demand and enhance your
+        decision-making process.
+      </p>
+    </div>
+  </body>
+</html>
